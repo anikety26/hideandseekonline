@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Seek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="regionContainer">
+            <strong>Hide and Seek Across <span id="region">Unknown</span> </strong>
+        </div>
+        <div id="currentCityContainer">
+            <strong>Currently In:</strong> <span id="currentCity">Unknown</span>
+        </div>
+        <div id="runsContainer"></div>
+        <div> </div>
+<title>Question Bank</title> <style type="text/css"> .tg {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;} .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;} .tg .tg-hl5l{background-color:#D9EAD3;font-weight:bold;text-align:left;text-decoration:underline;vertical-align:bottom} .tg .tg-yjp2{background-color:#CFE2F3;font-weight:bold;text-align:left;text-decoration:underline;vertical-align:bottom} .tg .tg-uqwp{background-color:#E6B8AF;border-color:inherit;text-align:left;vertical-align:bottom} .tg .tg-8xwh{background-color:#EAD1DC;font-weight:bold;text-align:left;text-decoration:underline;vertical-align:bottom} .tg .tg-exb6{background-color:#E6B8AF;border-color:inherit;font-weight:bold;text-align:left;text-decoration:underline;vertical-align:bottom} .tg .tg-g9f2{background-color:#FFF2CC;text-align:left;vertical-align:bottom} .tg .tg-0r3k{background-color:#D9D2E9;font-weight:bold;text-align:left;text-decoration:underline;vertical-align:bottom} .tg .tg-5gpn{background-color:#FFF2CC;font-weight:bold;text-align:left;text-decoration:underline;vertical-align:bottom} .tg .tg-0qou{background-color:#D9EAD3;text-align:left;vertical-align:bottom} .tg .tg-j2xz{background-color:#D9D2E9;text-align:left;vertical-align:bottom} .tg .tg-9dxy{background-color:#EAD1DC;text-align:left;vertical-align:bottom} .tg .tg-js5d{background-color:#CFE2F3;text-align:left;vertical-align:bottom} .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top} .tg .tg-0lax{text-align:left;vertical-align:top} #question-bank {display: none;} </style> <script type="text/javascript"> function toggleQuestionBank() { var x = document.getElementById("question-bank"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } } </script> </head> <body> <button onclick="toggleQuestionBank()">Question Bank</button> <div id="question-bank"> <table class="tg"> <thead> <tr> <th class="tg-exb6">Matching</th> <th class="tg-hl5l">Measuring</th> <th class="tg-0r3k">Thermometer</th> <th class="tg-8xwh">Radar</th> <th class="tg-yjp2">Oddball</th> <th class="tg-5gpn">Tentacles</th> </tr> </thead> <tbody> <tr> <td class="tg-uqwp">Is your closest _____ the same as mine?</td> <td class="tg-0qou">Are you closer to a ______ than me?</td> <td class="tg-j2xz">5 miles</td> <td class="tg-9dxy">5 miles</td> <td class="tg-js5d">Five words, one of which rhymes with your city</td> <td class="tg-g9f2">Out of all the ____ within 20 miles of me, which one are you closest to?</td> </tr> <tr> <td class="tg-uqwp">1. International Airport</td> <td class="tg-0qou">1. International Airport</td> <td class="tg-j2xz">25 miles</td> <td class="tg-9dxy">10 miles</td> <td class="tg-js5d">Strava map</td> <td class="tg-g9f2">1. Amusement Parks</td> </tr> <tr> <td class="tg-uqwp">2. Interstate Highway</td> <td class="tg-0qou">2. Interstate Highway</td> <td class="tg-j2xz">50 miles</td> <td class="tg-9dxy">20 miles</td> <td class="tg-js5d"></td> <td class="tg-g9f2">2. Zoos</td> </tr> <tr> <td class="tg-uqwp">3. Major City</td> <td class="tg-0qou">3. Major City</td> <td class="tg-j2xz">???? miles</td> <td class="tg-9dxy">50 miles</td> <td class="tg-js5d"></td> <td class="tg-g9f2">3. Aquariums</td> </tr> <tr> <td class="tg-uqwp"></td> <td class="tg-0qou"></td> <td class="tg-j2xz"></td> <td class="tg-9dxy">50 miles</td> <td class="tg-js5d"></td> <td class="tg-g9f2">4. Metro Stations</td> </tr> <tr> <td class="tg-uqwp">Are you in the same county as me?</td> <td class="tg-0qou"></td> <td class="tg-j2xz"></td> <td class="tg-9dxy">100 miles</td> <td class="tg-js5d"></td> <td class="tg-g9f2">5. State/National Parks</td> </tr> <tr> <td class="tg-uqwp"></td> <td class="tg-0qou"></td> <td class="tg-j2xz"></td> <td class="tg-9dxy">200 miles</td> <td class="tg-js5d"></td> <td class="tg-g9f2"></td> </tr> <tr> <td class="tg-uqwp"></td> <td class="tg-0qou"></td> <td class="tg-j2xz"></td> <td class="tg-9dxy">???? miles</td> <td class="tg-js5d"></td> <td class="tg-g9f2"></td> </tr> </tbody> </table> </div> </body> </html>
+<br>
+        <button id="addQuestionButton">Add Entry</button>
+        <button id="resetButton">Reset</button>
+        <button id="newRunButton">New Run</button>
+        <div id="questionsContainer"></div>
+        <div class="sum-row">
+            <strong>Total Time: </strong><span id="totalTime">0 hours 0 minutes</span>
+        </div>
+    </div>
+    <script>
+        document.getElementById('addQuestionButton').addEventListener('click', addQuestion);
+        document.getElementById('resetButton').addEventListener('click', resetQuestions);
+        document.getElementById('newRunButton').addEventListener('click', newRun);
+
+        // Automatically click the Reset/Start button when the page loads
+        window.onload = function() {
+            document.getElementById('resetButton').click();
+        };
+
+        let currentRegion = '';
+        let currentCity = '';
+        let runCount = 1;
+
+        function addQuestion() {
+            console.log("Button clicked!");  // Debugging log
+
+            const questionRow = document.createElement('div');
+            questionRow.className = 'question-row';
+
+            const dropdown = document.createElement('select');
+            dropdown.className = 'dropdown';
+            const choices = ['Matching', 'Measuring', 'Thermometer', 'Radar', 'Oddball', 'Tentacles', 'Travel'];
+            const numbers = {
+                'Matching': [5,5,5,5,5,5,5,5,10,10,10,10,15,15,20],
+                'Measuring': [5,5,5,5,5,5,5,5,10,10,10,10,15,15,20],
+                'Thermometer': [5,5,5,5,5,5,5,5,10,10,15,20],
+                'Radar': [5,5,5,5,5,5,5,5,10,10,15,20],
+                'Oddball': [5,5,5,5,5,5,5,5,10,10,10,,15,20],
+                'Tentacles': [5,5,5,5,5,5,5,5,10,10,10,10,10,10,10,15,15,15,15,15,20,20,20]
+            };
+
+            choices.forEach(choice => {
+                const option = document.createElement('option');
+                option.value = choice;
+                option.text = choice;
+                dropdown.appendChild(option);
+            });
+
+            const numberDisplay = document.createElement('span');
+            numberDisplay.className = 'number-display';
+
+            dropdown.addEventListener('change', () => {
+                const selectedChoice = dropdown.value;
+                if (selectedChoice === 'Travel') {
+                    const travelInput = prompt(`Enter the city you are going to (in ${currentRegion}):`);
+                    if (travelInput) {
+                        const currentCity = document.getElementById('currentCity').textContent;
+                        document.getElementById('currentCity').textContent = travelInput;
+                        const travelLink = `https://www.travelmath.com/driving-time/from/${currentCity},+${currentRegion}/to/${travelInput},+${currentRegion}`;
+                        window.open(travelLink, '_blank');
+                        numberDisplay.innerHTML = `<button onclick="askTravelTime(this);" class="link-button">Add Driving Time</button>`;
+                    }
+                } else {
+                    const randomNumber = numbers[selectedChoice][Math.floor(Math.random() * numbers[selectedChoice].length)];
+                    numberDisplay.textContent = `${randomNumber} mins`;
+                }
+                updateTotalTime();
+            });
+
+            questionRow.appendChild(dropdown);
+            questionRow.appendChild(numberDisplay);
+            document.getElementById('questionsContainer').appendChild(questionRow);
+
+            // Trigger the change event to display the initial random number
+            dropdown.dispatchEvent(new Event('change'));
+        }
+
+        function resetQuestions() {
+            document.getElementById('questionsContainer').innerHTML = '';
+            document.getElementById('totalTime').textContent = '0 hours 0 minutes';
+            currentRegion = prompt("Enter the region you are playing this game in:");
+            if (currentRegion) {
+                document.getElementById('region').textContent = currentRegion;
+            } else {
+                document.getElementById('region').textContent = 'Unknown';
+            }
+            currentCity = prompt(`Enter the city you start in (in ${currentRegion}):`);
+            if (currentCity) {
+                document.getElementById('currentCity').textContent = currentCity;
+            } else {
+                document.getElementById('currentCity').textContent = 'Unknown';
+            }
+        }
+
+        function newRun() {
+            document.getElementById('questionsContainer').innerHTML = '';
+            const totalTimeElement = document.getElementById('totalTime');
+            const runRow = document.createElement('div');
+            runRow.className = 'run-row';
+            runRow.textContent = `Run #${runCount}: ${totalTimeElement.textContent}`;
+            document.getElementById('runsContainer').appendChild(runRow);
+            runCount++;
+            document.getElementById('totalTime').textContent = '0 hours 0 minutes';
+        }
+
+        function updateTotalTime() {
+            const numberDisplays = document.querySelectorAll('.number-display');
+            let totalMinutes = 0;
+            numberDisplays.forEach(display => {
+                const number = parseFloat(display.textContent);
+                if (!isNaN(number)) {
+                    totalMinutes += number;
+                }
+            });
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+            document.getElementById('totalTime').textContent = `${hours} hours ${minutes} minutes`;
+        }
+
+        function askTravelTime(button) {
+            const hours = prompt("Enter the hours of travel time:");
+            const minutes = prompt("Enter the minutes of travel time:");
+            if (hours !== null && minutes !== null) {
+                const totalMinutes = parseInt(hours) * 60 + parseInt(minutes);
+                if (!isNaN(totalMinutes)) {
+                    // Replace the button with the travel time in minutes
+                    const numberDisplay = button.parentElement;
+                    numberDisplay.textContent = `${totalMinutes} mins`;
+                    updateTotalTime();
+                }
+            }
+        }
+    </script>
+</body>
+</html>
